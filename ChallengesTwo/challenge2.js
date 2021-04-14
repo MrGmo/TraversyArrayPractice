@@ -97,7 +97,6 @@
 // Z should turn to A
 // ex. 'hello there' === 'Ifmmp UIfsf'
 
-
 // function letterChanges(str){
 //   let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
 //     if(char === 'z' || char === 'Z'){
