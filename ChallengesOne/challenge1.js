@@ -3,61 +3,11 @@
 // ex. reverseString('hello') === 'olleh'
 
 // Solution 0 / using recursion
-// function reverse(str){
+// function reverseString(str){
 //   if(str === "") return "";
 //   return reverse(str.substring(1)) + str.charAt(0)
 // }
-//
-// console.log(reverse('hello'))
 
-
-// Solution 1
-// function reverseString(str) {
-//   return str
-        // .split('')
-        // .reverse()
-        // .join('')
-// }
-
-// Solution 2
-// function reverseString(str){
-//   let newStr = ''
-//   for(let i = str.length-1; i >= 0; i--){
-//     newStr+= str[i]
-//   }
-//     return newStr
-// }
-
-// Solution 3
-// function reverseString(str){
-//   let newStr = ''
-//   for(let i = 0; i <= str.length-1; i++){
-//     newStr = str[i] + newStr
-//   }
-//     return newStr
-// }
-
-// Solution 4
-// function reverseString(str){
-// let revString = ''
-// for(let x of str){
-//   revString = x + revString
-//   }
-// return revString
-// }
-
-// Solution 5
-// function reverseString(str){
-//   let revString = ''
-//   str.split('').forEach(x => revString = x + revString)
-//   return revString
-// }
-
-// Solution 6
-// function reverseString(str){
-//   return str.split('').reduce((a, b) => b + a, '')
-// }
-//
 // console.log(reverseString('HELLO'))
 
 // CHALLENGE 2: VALIDATE A PALINDROME
