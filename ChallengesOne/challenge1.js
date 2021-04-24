@@ -5,7 +5,12 @@
 // Solution 0 / using recursion
 // function reverseString(str){
 //   if(str === "") return "";
-//   return reverse(str.substring(1)) + str.charAt(0)
+//   return reverseString(str.substring(1)) + str.charAt(0)
+// }
+
+// Solution 1
+// function reverseString(str){
+//   return str.split('').reverse().join('')
 // }
 
 // console.log(reverseString('HELLO'))
