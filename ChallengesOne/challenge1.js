@@ -13,6 +13,11 @@
 //   return str.split('').reverse().join('')
 // }
 
+// Solution 2 (FIX THIS ONE, NOT CORRECT)
+// function reverseString(str){
+//   return str.split('').reduce((a, b) => b - a, '')
+// }
+
 // console.log(reverseString('HELLO'))
 
 // CHALLENGE 2: VALIDATE A PALINDROME
