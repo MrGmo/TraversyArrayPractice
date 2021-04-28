@@ -9,14 +9,9 @@
 // }
 
 // Solution 1
-// function reverseString(str){
-//   return str.split('').reverse().join('')
-// }
 
 // Solution 2 (FIX THIS ONE, NOT CORRECT)
-// function reverseString(str){
-//   return str.split('').reduce((a, b) => b - a, '')
-// }
+
 
 // console.log(reverseString('HELLO'))
 
@@ -25,9 +20,6 @@
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
 // Solution 1
-// function isPalindrome(str){
-//   return str.split('').reverse().join('') === str
-// }
 
 // console.log(isPalindrome('racecar'))
 
