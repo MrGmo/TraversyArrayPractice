@@ -51,12 +51,7 @@
 // }
 
 // Solution 3
-// function capitalizeLetters(str){
-//   return str.replace(/\b[a-z]/gi, function(x){
-//     return x.toUpperCase()
-//   })
-// }
-//
+
 // console.log(capitalizeLetters('i love javascript'))
 
 
@@ -65,21 +60,7 @@
 // ex. maxCharacter('javascript') == 'a'
 
 // Solution 1
-// function maxCharacter(str){
-//   const objMap = {}
-//   let maxNum = 0
-//   let maxChar = ''
-//   str.split('').forEach(x => {
-//     return objMap[x] ? objMap[x]++ : objMap[x] = 1
-//   })
-//   for(let y in objMap){
-//     if(objMap[y] > maxNum){
-//       maxNum = objMap[y]
-//       maxChar = y
-//     }
-//   }
-//   return maxChar
-// }
+
 //
 // console.log(maxCharacter('hhhhhhhhhhiiiii'))
 
@@ -88,21 +69,7 @@
 
 
 // Solution 1
-// function fizzBuzz(){
-//   for(let i = 1; i <= 100; i++){
-//     if(i % 15 === 0){
-//       console.log('FizzBuzz')
-//     }else if(i % 5 === 0){
-//       console.log('Buzz')
-//     }else if(i % 3 === 0){
-//       console.log('Fizz')
-//     }else{
-//       console.log(i)
-//     }
-//   }
-// }
-//
-// fizzBuzz()
+
 
 
 // Solution 2
