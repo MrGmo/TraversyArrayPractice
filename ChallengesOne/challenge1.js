@@ -28,18 +28,13 @@
 // ex. reverseInt(521) === 125
 
 // Solution 1
-// function reverseInt(int) {
-//   let string = int.toString().split('').reverse().join('')
-//   return parseInt(string)
-// }
-//
+
 // console.log(reverseInt(123))
 
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-
 
 // Solution 0
 // const capitalizeFirst = str => str.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
@@ -48,13 +43,7 @@
 
 
 // Solution 1
-// function capitalizeLetters(str){
-//   const strArr = str.toLowerCase().split(' ')
-//   for(let i = 0; i < strArr.length; i++){
-//     strArr[i]=strArr[i].substring(0,1).toUpperCase() + strArr[i].substring(1)
-//   }
-//   return strArr.join(' ')
-// }
+
 
 // Solution 2
 // function capitalizeLetters(str) {
