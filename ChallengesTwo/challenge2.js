@@ -5,16 +5,7 @@
 //ex. longestWord('hello there, my name is Brad') === ['hello', 'there']
 
 // Solution 1
-// function longestWord(sen){
-//   const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g)
-//   const sortArr = wordArr.sort((a, b) => b.length - a.length)
-//   const longest = sortArr.filter(a => a.length === sortArr[0].length)
-//   if(longest.length === 1){
-//     return longest[0]
-//   }else{
-//     return longest
-//   }
-// }
+
 //
 // console.log(longestWord('Hello there, my name is Max'))
 
@@ -24,32 +15,10 @@
 // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
 
 // Solution 1
-// function chunkArray(arr, len){
-//   const chunkedArr = []
-//   let i = 0
-//
-//   while(i < arr.length){
-//     chunkedArr.push(arr.slice(i, i+len))
-//     i += len
-//   }
-//   return chunkedArr
-// }
+
 
 // Solution 2
-// function chunkArray(arr, len){
-//   const chunkedArr = []
-//
-//   arr.forEach(function(x){
-//     const last = chunkedArr[chunkedArr.length - 1]
-//     if(!last || last.length === len){
-//       chunkedArr.push([x])
-//     }else{
-//       last.push(x)
-//     }
-//   })
-//   return chunkedArr
-// }
-//
+
 // console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 2))
 
 // CHALLENGE 3: FLATTEN ARRAY
