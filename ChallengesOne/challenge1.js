@@ -9,9 +9,7 @@
 // }
 
 // Solution 1
-
-// Solution 2 (FIX THIS ONE, NOT CORRECT)
-
+// const reverseString = (str) => str.split('').reverse().join('')
 
 // console.log(reverseString('HELLO'))
 
