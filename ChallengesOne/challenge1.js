@@ -9,16 +9,25 @@
 // const reverseString = (str) => str.split('').reverse().join('')
 
 // Solution 3
+// function reverseString(str){
+//   let revWord = ''
+//   for(let i = str.length-1; i >= 0; i--){
+//     revWord+=str[i]
+//   }
+//   return revWord
+// }
 
-function reverseString(str){
-  if(str.length < 1){
-    return ''
-  }else{
-    return reverseString(str.length-1) + str.charAt(0)
-  }
-}
 
-console.log(reverseString('hello'))
+// Solution 4
+// function reverseString(str){
+//   if(str === ''){
+//     return ''
+//   }else{
+//     return reverseString(str.substr(1)) + str.charAt(0)
+//   }
+// }
+
+// console.log(reverseString('hello'))
 
 
 // CHALLENGE 2: VALIDATE A PALINDROME
