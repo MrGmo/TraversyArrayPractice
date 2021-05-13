@@ -90,12 +90,13 @@
 // }
 
 // Solution 3
-function capitalizeFirst(str){
-  
-}
+// function capitalizeFirst(str){
+//   return str.replace(/\b[a-z]/gi, function(x){
+//     return x.toUpperCase()
+//   })
+// }
 
-
-console.log(capitalizeFirst('i love javascript'))
+// console.log(capitalizeFirst('i love javascript'))
 
 
 // CHALLENGE 5: MAX CHARACTER
