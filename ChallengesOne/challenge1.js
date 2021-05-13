@@ -103,6 +103,14 @@
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
 
+// Solution 1
+function maxChar(str){
+  let obj = {}
+  str.split('').forEach(x => obj[x] > 0 ? obj[x]++ : obj[x] = 1)
+  return Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b)
+}
+
+console.log(maxChar('javascript'))
 
 // CHALLENGE 6: FIZZBUZZ
 // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
