@@ -76,21 +76,18 @@
 // Z should turn to A
 // ex. 'hello there' === 'Ifmmp UIfsf'
 
-function letterChanges(str){
-  let newStr = []
-  let wordStr = []
-  for(let x of str){
-    newStr.push(x.charCodeAt())
-  }
-  for(let y of newStr){
-    wordStr.push(String.fromCharCode(y+1))
-  }
-  let convert = wordStr.join('').replace('!', ' ')
+// Solution 1
+// function letterChanges(str){
+//   let newStr = str.toLowerCase().replace(/[a-z]/g, function(letter){
+//     if(letter === 'z' || letter === 'Z'){
+//       return 'a'
+//     }else{
+//       return String.fromCharCode(letter.charCodeAt()+1)
+//     }
+//   })
+//   return newStr.replace(/[a|e|i|o|u]/g, function(x){
+//     return x.toUpperCase()
+//   })
+// }
 
-  return convert.replace(/([a|e|i|o|u])/g, function(vowels){
-    return vowels.toUpperCase()
-  })
-}
-
-
-console.log(letterChanges('hello there'))
+// console.log(letterChanges('hello there'))
