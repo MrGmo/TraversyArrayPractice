@@ -17,14 +17,38 @@
 //   return revWord
 // }
 
-
 // Solution 4
+// function reverseString(str){
+//   let revWord = ''
+//   for(let i = 0; i <= str.length-1; i++){
+//     revWord = str[i] + revWord
+//   }
+//   return revWord
+// }
+
+// Solution 5
 // function reverseString(str){
 //   if(str === ''){
 //     return ''
 //   }else{
 //     return reverseString(str.substr(1)) + str.charAt(0)
 //   }
+// }
+
+// Solution 6
+// function reverseString(str){
+//   revString = ''
+//   for(let x of str){
+//     revString = x + revString
+//   }
+//   return revString
+// }
+
+// Solution 7
+// function reverseString(str){
+//   revString = '';
+//   str.split('').forEach(x => revString = x + revString);
+//   return revString
 // }
 
 // console.log(reverseString('hello'))
@@ -34,6 +58,12 @@
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
+// Solution 1
+// const isPalindrome = (str) => str.split('').reverse().join('') === str
+
+
+
+// console.log(isPalindrome('racecar'))
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
