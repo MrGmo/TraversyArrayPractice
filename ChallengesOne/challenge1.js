@@ -61,14 +61,41 @@
 // Solution 1
 // const isPalindrome = (str) => str.split('').reverse().join('') === str
 
-
-
 // console.log(isPalindrome('racecar'))
+
+// CHALLENGE 3: REVERSE AN INTEGER
+//Return an integer in reverse
+//ex: reverseInt(521) === 125
+
+// Solution 1
+// const reverseInt = (num) => Number(num.toString().split('').reverse().join(''))
+
+// console.log(reverseInt(521))
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
 
+// Solution 1
+// const capitalizeFirst = (str) => str.split(' ').map(x => x[0].toUpperCase() + x.substr(1)).join(' ')
+
+// Solution 2
+// function capitalizeFirst(str){
+//   let arr = str.split(' ')
+//   let newArr = []
+//   for(let x of arr){
+//     newArr.push(x[0].toUpperCase() + x.substr(1))
+//   }
+//   return newArr.join(' ')
+// }
+
+// Solution 3
+function capitalizeFirst(str){
+  
+}
+
+
+console.log(capitalizeFirst('i love javascript'))
 
 
 // CHALLENGE 5: MAX CHARACTER
