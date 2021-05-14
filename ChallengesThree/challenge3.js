@@ -53,14 +53,12 @@
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
 
 // Solution 1
-const seekAndDestroy = (arr, val1, val2) => arr.filter(x => x !== val1 && x !== val2)
+// const seekAndDestroy = (arr, val1, val2) => arr.filter(x => x !== val1 && x !== val2)
 
 // Solution 2
+// const seekAndDestroy = (arr, ...rest) => arr.filter(x => !rest.includes(x))
 
-
-
-
-console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6))
+// console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6))
 
 // CHALLENGE 4: SORT BY HEIGHT
 // Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
@@ -68,7 +66,23 @@ console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6))
 // a = [-1, 150, 190, 170, -1, -1, 160, 180]
 // sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]
 
-// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
+// Solution 1
+// function sortByHeight(arr){
+//   const sorted = arr.filter(x => x !== -1).sort()
+//   let newArr = []
+//   for(let x of arr){
+//     x !== -1 ? newArr.push(sorted.shift()) : newArr.push(x)
+//   }
+//   return newArr
+// }
+
+// Solution 2
+function sortByHeight(){
+  
+}
+
+
+console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
 
 // CHALLENGE 5: MISSING LETTERS
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
