@@ -77,12 +77,23 @@
 // }
 
 // Solution 2
-function sortByHeight(){
-  
-}
+// function sortByHeight(arr){
+//   const arr1 = []
+//   const arr2 = []
 
+//   arr.forEach((x, i) => {
+//     if(x === -1){
+//       arr1.push(i)
+//     }else{
+//       arr2.push(x)
+//     }
+//   })
+//   const sortedArr = arr2.sort((a, b) => a - b)
+//   arr1.forEach((x, i) => sortedArr.splice(arr1[i], 0, -1))
+//   return sortedArr
+// }
 
-console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
+// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
 
 // CHALLENGE 5: MISSING LETTERS
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
@@ -91,14 +102,45 @@ console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
 // missingLetters("abcdefghjklmno") == "i"
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
+// Solution 1
+// function missingLetters(str){
+//   const numArr = []
+//   const compareArr = []
+//   for(let x of str){
+//     numArr.push(x.charCodeAt())
+//   }
+//   for(let i = numArr[0]; i <= numArr[numArr.length-1]; i++){
+//     compareArr.push(i)
+//   }
+//   const val1 = numArr.reduce((a, b) => a+b, 0)
+//   const val2 = compareArr.reduce((a, b) => a+b, 0)
+//   return val1 === val2 ? undefined : String.fromCharCode(val2-val1)
+// }
 
-// console.log(missingLetters('abcdefghjklmno'))
+// console.log(missingLetters('abcdeghijklmnopqrstuvwxyz'))
 
 // CHALLENGE 6: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 
+// Solution 1
+// function evenOddSums(arr){
+//   const evenSum = []
+//   const oddSum =[]
+//   arr.forEach(x => x % 2 === 0 ? evenSum.push(x) : oddSum.push(x))
+//   const evenTotal = evenSum.reduce((a,b)=> a+b,0)
+//   const oddTotal = oddSum.reduce((a,b)=> a+b,0)
+//   return [evenTotal, oddTotal]
+// }
 
+// Solution 2
+// function evenOddSums(arr){
+//   let evenSum = 0
+//   let oddSum = 0
+
+//   arr.forEach(x => x % 2 === 0 ? evenSum+=x : oddSum+=x)
+//   return [evenSum, oddSum]
+// }
 
 // console.log(evenOddSums([50, 60, 60, 45, 71]))
