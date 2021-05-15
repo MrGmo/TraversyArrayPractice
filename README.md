@@ -20,4 +20,4 @@ Wes Bos Array Cardio: https://github.com/MrGmo/WesBosArrayCardio/tree/main
 
 Code Wars: https://github.com/MrGmo/codeWars
 
-Free Code Camp: https://github.com/MrGmo/InterestingCodingChallenges
+Free Code Camp: https://github.com/MrGmo/freeCodeCamp
